@@ -238,10 +238,16 @@
           text-decoration: none;
         }
         
-        /* Explicitly disable image hover effects on mobile */
+        /* Correct way to disable hover effects on mobile */
+        .img-container img {
+          opacity: 0.35;
+          transform: none;
+          transition: none;
+        }
+        
         .img-container img:hover {
-          opacity: 0.35 !important;
-          transform: none !important;
+          opacity: 0.35;
+          transform: none;
         }
       }
 
